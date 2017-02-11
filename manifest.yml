@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: truckheater-pcoueffin
+  host: truckheater-pcoueffin
+  disk_quota: 1024M
+  services:
+  - truckheater-pcoueffin-cloudantNoSQLDB
+  - truckheater-pcoueffin-iotf-service
+  - availability-monitoring-auto
